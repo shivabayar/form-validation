@@ -21,9 +21,11 @@ $("#inputName").blur(function(){
 
 		console.log('Empty name');
 		$(".nameReduired").css("visibility","visible");
+		$(".nameReduired").css("color","red");
 	}
 	else if(name.length > 20 ){
 		$(".nameWrong").css("visibility","visible");
+		$(".nameWrong").css("color","red");
 		console.log('Name too long');
 	}
 
@@ -48,6 +50,7 @@ $("#inputEmail").blur(function(){
 
 		if(email === "" || email === null){
 			$(".emadilReduired").css("visibility","visible");
+			$(".emadilReduired").css("color","red");
 			console.log("empty email");
 		}
 		else if(re.test(email)){
@@ -56,6 +59,7 @@ $("#inputEmail").blur(function(){
 		else
 		{
 			$(".emailWrong").css("visibility","visible");
+			$(".emailWrong").css("color","red");
 			console.log("wrong email");
 		}
 
@@ -71,8 +75,9 @@ $("#inputPhone").blur(function(){
 	var re = /\+91-\d{10}/;
 
 
-	if(phone === null){
+	if(phone === null || phone=== '0'){
 		$(".numberReduired").css("visibility","visible");
+		$(".numberReduired").css("color","red");
 		console.log("no number");
 	}
 	else if(re.test(phone)){
@@ -81,6 +86,7 @@ $("#inputPhone").blur(function(){
 	}
 	else{
 		$(".numberWrong").css("visibility","visible");
+		$(".numberWrong").css("color","red");
 		console.log("Incorrect number");
 	}
 });//end of phone number validation

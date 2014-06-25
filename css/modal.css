@@ -4,6 +4,7 @@
 	position: center;
 }
 
+/*making all the labels hidden*/
 .nameReduired, .nameWrong,.emadilReduired,.emailWrong,.numberReduired,.numberWrong,.fromDateReduired,.toDateReduired
 {
 	visibility: hidden;

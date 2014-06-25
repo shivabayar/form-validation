@@ -35,9 +35,9 @@
                 </div>
                 <div class="col-sm-5 collapse navbar-collapse pull-right">
                     <ul class="nav navbar-nav top-menu">
-                        <li class="home-nav-button"><a href="">HOME</a></li>
-                        <li class="features-nav-button"><a href="">FEATURES</a></li>
-                        <li class="contact-us-nav-button"  ><a href="">CONTACT US</a></li>
+                        <li id="x" class="active"><a href="#">HOME</a></li>
+                        <li id="y" ><a href="#">FEATURES</a></li>
+                        <li id="z" ><a href="#">CONTACT US</a></li>
                     </ul>
                 </div>
             </div>
@@ -326,9 +326,15 @@
                                     <label >Number*</label>
                                     <input type="text" class="form-control" id="inputPhone" placeholder="What is your contact number?.">
                                     <label class="numberReduired"> *Contact Number is required</label>
-                                    <label class="numberWrong" padding='-10px'> *In-Valid Phone Number</label>
+                                    <label class="numberWrong" > *In-Valid Phone Number</label>
                                 </div>
-
+                                
+                                <div class="form-group">
+                                    <label >Address*</label>
+                                    <textarea rows="4" class="form-control" placeholder="Where do you live?"></textarea>
+                                    <label class="numberReduired"> *Contact Number is required</label>
+                                    
+                                </div>
                                 <div class="form-group">
                                     <label >From Date</label>
                                     <input type="date" class="form-control" >
@@ -398,6 +404,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/validateForm.js"></script>
+        <script scr="js/navigationStyle.js"></script>
     </body>
 
 </html>
