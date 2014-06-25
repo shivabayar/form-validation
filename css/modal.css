@@ -1,0 +1,12 @@
+
+#saveChangesModal
+{
+	position: center;
+}
+
+.nameReduired, .nameWrong,.emadilReduired,.emailWrong,.numberReduired,.numberWrong,.fromDateReduired,.toDateReduired
+{
+	visibility: hidden;
+	color: red;
+}
+
